@@ -46,21 +46,21 @@ DEVOPS-UTILITIES-API/
 ```cd devops-utilities-api```
 
 ## Create and activate virtual environment
-python3 -m venv venv
-source venv/bin/activate
+```python3 -m venv venv```
+```source venv/bin/activate```
 
 ## Install dependencies
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 ## Start the application
-python main.py
+```python main.py```
 
 3. Running with Docker
 ## Build the image
-docker build -t devops-api .
+```docker build -t devops-api .```
 
 ## Run the container
-docker run -p 8000:8000 --env-file .env devops-api
+```docker run -p 8000:8000 --env-file .env devops-api```
 
 🔐 Configuration
 
@@ -75,6 +75,7 @@ S3_RETENTION_DAYS=90
 ```
 
 📖 API Endpoints
+
 | Method | Endpoint        | Description                      |
 |-GET----|-/api/v1/metrics-|-Returns CPU, RAM, and Disk usage-|
 | GET    | /api/v1/s3      | Lists new and old S3 buckets     |
